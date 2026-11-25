@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Yaowapa Rachakum — Lecturer, Researcher and Digital Technology Developer based in Thailand.">
-    <meta name="theme-color" content="#2563EB">
+    <meta name="theme-color" content="#1B1446">
 
     <title>Yaowapa Rachakum | Digital Innovator</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -19,11 +19,15 @@
 
 <body>
 
+<div class="stars" aria-hidden="true"></div>
+
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg fixed-top site-nav" id="siteNav">
-    <div class="container-xl">
+    <div class="container">
 
-        <a class="brand" href="#home">YP<span>.</span></a>
+        <a class="brand" href="#home">
+            <span class="brand-mark">YP</span> Yaowapa
+        </a>
 
         <button class="nav-toggle navbar-toggler"
             type="button"
@@ -32,20 +36,17 @@
             aria-controls="menu"
             aria-expanded="false"
             aria-label="Toggle navigation">
-            <span></span><span></span>
+            <span></span><span></span><span></span>
         </button>
 
         <div class="collapse navbar-collapse" id="menu">
-            <ul class="navbar-nav mx-auto">
+            <ul class="navbar-nav ms-auto">
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#process">Process</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-
-            <a href="#contact" class="nav-cta">
-                <span class="theme-dot"></span> Drop me a line
-            </a>
         </div>
     </div>
 </nav>
@@ -53,133 +54,149 @@
 
 <!-- HERO -->
 <section id="home" class="hero">
-    <div class="container-xl">
+    <div class="container">
+        <div class="row align-items-center g-5">
 
-        <div class="hero-main">
-            <p class="hero-eyebrow reveal">
-                <span class="theme-dot"></span> Lecturer · Researcher · Developer
-            </p>
+            <div class="col-lg-7 order-2 order-lg-1 text-center text-lg-start">
+                <h1 class="hero-name reveal">
+                    Yaowapa
+                    <span>Rachakum</span>
+                </h1>
+                <p class="hero-role reveal">Lecturer &amp; Digital Innovator based in Thailand</p>
+                <a href="#contact" class="btn-pill reveal">Get in touch</a>
+            </div>
 
-            <h1 class="hero-title reveal">
-                <span>Digital</span>
-                <span class="accent">Innovator</span>
-            </h1>
-
-            <div class="hero-row reveal">
-                <p class="hero-description">
-                    Specialized in AI, Software Development, Data Analytics
-                    and Digital Transformation — turning ideas into
-                    practical digital solutions.
-                </p>
-
-                <div class="hero-actions">
-                    <a href="#work" class="btn-pill btn-solid">View my work</a>
-                    <a href="#contact" class="btn-pill btn-ghost">Get in touch</a>
+            <div class="col-lg-5 order-1 order-lg-2">
+                <div class="hero-photo reveal">
+                    <img src="image/hero.png" alt="Yaowapa Rachakum" width="1672" height="941">
                 </div>
             </div>
+
         </div>
 
-        <div class="hero-bottom">
-            <span>BASED IN THAILAND</span>
-            <span class="d-none d-md-inline">LEARN · TEACH · DEVELOP · INSPIRE</span>
-            <a href="#about">SCROLL TO EXPLORE ↓</a>
+        <!-- Feature cards -->
+        <div class="feature-grid">
+            <div class="feature-card reveal">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg>
+                <h3>Software Development</h3>
+                <p>Building practical web and digital systems that solve real-world problems for people and organizations.</p>
+            </div>
+            <div class="feature-card reveal">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+                <h3>AI &amp; Data Analytics</h3>
+                <p>Turning data into insight with artificial intelligence and analytics for smarter decisions.</p>
+            </div>
+            <div class="feature-card reveal">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5L2 9z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5"/></svg>
+                <h3>Teaching &amp; Research</h3>
+                <p>Inspiring learners and doing research in digital innovation and smart local solutions.</p>
+            </div>
         </div>
-
     </div>
-
-    <div class="hero-circle" aria-hidden="true"></div>
-    <div class="hero-circle hero-circle--sm" aria-hidden="true"></div>
 </section>
 
 
 <!-- ABOUT -->
-<section id="about" class="section section--white">
-    <div class="container-xl">
+<section id="about" class="section">
+    <div class="container">
 
-        <div class="section-label">01 — ABOUT ME</div>
+        <div class="section-head reveal">
+            <span class="eyebrow">About Me</span>
+            <h2>A Passionate Lecturer<br>Who Loves Technology</h2>
+        </div>
 
-        <div class="about-grid">
+        <div class="row align-items-center g-5">
 
-            <div class="about-media reveal">
-                <img src="image/image1.png" alt="Portrait of Yaowapa Rachakum" loading="lazy" width="1254" height="1254">
+            <div class="col-lg-6">
+                <div class="about-media reveal">
+                    <img src="image/hero.png" alt="Yaowapa Rachakum at Kalasin University" loading="lazy" width="1672" height="941">
+
+                    <div class="about-badge-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.5 5.5 21l2-7.5L2 9h7z"/></svg>
+                    </div>
+
+                    <div class="about-badge">
+                        <strong>6</strong>
+                        <span>Areas of<br>Expertise</span>
+                    </div>
+                </div>
             </div>
 
-            <div class="about-content reveal">
-                <h2 class="section-title">
-                    Technology with
-                    <span>Purpose.</span>
-                </h2>
+            <div class="col-lg-6">
+                <div class="about-content reveal">
+                    <h3>About Me</h3>
+                    <p>
+                        Hi, I'm Yaowapa Rachakum (YP) — a lecturer, researcher and digital
+                        technology developer passionate about transforming ideas into practical
+                        digital solutions. My work focuses on software development, artificial
+                        intelligence, data analytics and smart local solutions.
+                    </p>
+                    <p>
+                        I believe technology is not just about tools or code. It's about solving
+                        real-world problems and creating meaningful experiences.
+                    </p>
 
-                <p class="about-lead">Hi, I'm Yaowapa Rachakum (YP).</p>
+                    <div class="info-table">
+                        <div>
+                            <span>Name</span>
+                            <strong>Yaowapa Rachakum</strong>
+                        </div>
+                        <div>
+                            <span>Role</span>
+                            <strong>Lecturer &amp; Researcher</strong>
+                        </div>
+                        <div>
+                            <span>Faculty</span>
+                            <strong>Management Science</strong>
+                        </div>
+                        <div>
+                            <span>University</span>
+                            <strong>Kalasin University</strong>
+                        </div>
+                        <div>
+                            <span>Email</span>
+                            <strong>your-email@example.com</strong>
+                        </div>
+                        <div>
+                            <span>Based in</span>
+                            <strong>Thailand</strong>
+                        </div>
+                    </div>
 
-                <p>
-                    I'm a lecturer, researcher, and digital technology
-                    developer passionate about transforming ideas
-                    into practical digital solutions.
-                </p>
-
-                <p>
-                    My work focuses on software development,
-                    digital innovation, artificial intelligence,
-                    data analytics, and smart local solutions.
-                </p>
-
-                <p>
-                    I believe technology is not just about tools
-                    or code. It's about solving real-world problems
-                    and creating meaningful experiences.
-                </p>
-
-                <div class="about-signature">Learn. Teach. Develop. Inspire.</div>
+                    <a href="#contact" class="btn-pill">Contact Me</a>
+                </div>
             </div>
 
         </div>
+
+        <!-- Stats — TODO: replace the numbers with real figures -->
+        <div class="stats-grid">
+            <div class="stat-card reveal"><strong>10+</strong><span>Digital<br>Projects</span></div>
+            <div class="stat-card reveal"><strong>20+</strong><span>Research<br>Works</span></div>
+            <div class="stat-card reveal"><strong>500+</strong><span>Students<br>Taught</span></div>
+            <div class="stat-card reveal"><strong>10+</strong><span>Years of<br>Experience</span></div>
+        </div>
+
     </div>
 </section>
 
 
-<!-- WORK / EXPERTISE -->
-<section id="work" class="section section--tint">
-    <div class="container-xl">
+<!-- SERVICES -->
+<section id="services" class="section section--alt">
+    <div class="container">
 
-        <div class="section-label">02 — WHAT I DO</div>
-
-        <div class="work-heading">
-            <h2 class="section-title">Selected Areas<span>.</span></h2>
-            <p>Exploring ideas. Building technology. Creating meaningful impact.</p>
+        <div class="section-head reveal">
+            <span class="eyebrow">What I Do</span>
+            <h2>Selected Areas of Expertise</h2>
         </div>
 
-        <div class="work-list">
-            <a href="#contact" class="work-item reveal">
-                <span class="work-no">01</span>
-                <h3>Software Development</h3>
-                <span class="work-arrow" aria-hidden="true">↗</span>
-            </a>
-            <a href="#contact" class="work-item reveal">
-                <span class="work-no">02</span>
-                <h3>Artificial Intelligence</h3>
-                <span class="work-arrow" aria-hidden="true">↗</span>
-            </a>
-            <a href="#contact" class="work-item reveal">
-                <span class="work-no">03</span>
-                <h3>Data Analytics</h3>
-                <span class="work-arrow" aria-hidden="true">↗</span>
-            </a>
-            <a href="#contact" class="work-item reveal">
-                <span class="work-no">04</span>
-                <h3>Teaching &amp; Research</h3>
-                <span class="work-arrow" aria-hidden="true">↗</span>
-            </a>
-            <a href="#contact" class="work-item reveal">
-                <span class="work-no">05</span>
-                <h3>Smart Local Solutions</h3>
-                <span class="work-arrow" aria-hidden="true">↗</span>
-            </a>
-            <a href="#contact" class="work-item reveal">
-                <span class="work-no">06</span>
-                <h3>Digital Innovation</h3>
-                <span class="work-arrow" aria-hidden="true">↗</span>
-            </a>
+        <div class="service-grid">
+            <div class="service-card reveal"><span>01</span><h3>Software Development</h3></div>
+            <div class="service-card reveal"><span>02</span><h3>Artificial Intelligence</h3></div>
+            <div class="service-card reveal"><span>03</span><h3>Data Analytics</h3></div>
+            <div class="service-card reveal"><span>04</span><h3>Teaching &amp; Research</h3></div>
+            <div class="service-card reveal"><span>05</span><h3>Smart Local Solutions</h3></div>
+            <div class="service-card reveal"><span>06</span><h3>Digital Innovation</h3></div>
         </div>
 
     </div>
@@ -187,35 +204,33 @@
 
 
 <!-- PROCESS -->
-<section id="process" class="section section--white">
-    <div class="container-xl">
+<section id="process" class="section">
+    <div class="container">
 
-        <div class="section-label">03 — MY APPROACH</div>
-
-        <h2 class="section-title process-title">
-            From Ideas<br>
-            <span>To Impact.</span>
-        </h2>
+        <div class="section-head reveal">
+            <span class="eyebrow">My Approach</span>
+            <h2>From Ideas to Impact</h2>
+        </div>
 
         <div class="process-grid">
             <div class="process-item reveal">
                 <span class="process-no">01</span>
-                <h4>Explore</h4>
+                <h3>Explore</h3>
                 <p>Discover problems, understand needs and explore new possibilities.</p>
             </div>
             <div class="process-item reveal">
                 <span class="process-no">02</span>
-                <h4>Design</h4>
+                <h3>Design</h3>
                 <p>Transform ideas into concepts and meaningful experiences.</p>
             </div>
             <div class="process-item reveal">
                 <span class="process-no">03</span>
-                <h4>Develop</h4>
+                <h3>Develop</h3>
                 <p>Build practical solutions using modern technologies.</p>
             </div>
             <div class="process-item reveal">
                 <span class="process-no">04</span>
-                <h4>Deliver</h4>
+                <h3>Deliver</h3>
                 <p>Create impact through innovation and continuous improvement.</p>
             </div>
         </div>
@@ -225,39 +240,24 @@
 
 
 <!-- CONTACT -->
-<section id="contact" class="contact-section">
-    <div class="container-xl">
-
-        <div class="section-label">04 — GET IN TOUCH</div>
-
-        <h2 class="reveal">
-            Have an idea?
-            <span>Let's talk.</span>
-        </h2>
-
-        <p>Open to research collaboration, digital projects and meaningful conversations.</p>
-
-        <a href="mailto:your-email@example.com" class="contact-link">
-            Drop me a line <span aria-hidden="true">↗</span>
-        </a>
-
-        <div class="contact-bottom">
-            <span>YAOWAPA RACHAKUM</span>
-            <span>DIGITAL TECHNOLOGY &amp; INNOVATION</span>
+<section id="contact" class="section">
+    <div class="container">
+        <div class="contact-box reveal">
+            <span class="eyebrow">Get In Touch</span>
+            <h2>Have an idea? <span>Let's talk.</span></h2>
+            <p>Open to research collaboration, digital projects and meaningful conversations.</p>
+            <a href="mailto:your-email@example.com" class="btn-pill">Drop me a line</a>
         </div>
-
     </div>
 </section>
 
 
 <!-- FOOTER -->
 <footer class="footer">
-    <div class="container-xl">
-        <div class="footer-inner">
-            <a href="#home" class="brand">YP<span>.</span></a>
-            <p>© 2026 Yaowapa Rachakum. All rights reserved.</p>
-            <a href="#home" class="footer-top">BACK TO TOP ↑</a>
-        </div>
+    <div class="container footer-inner">
+        <a href="#home" class="brand"><span class="brand-mark">YP</span> Yaowapa</a>
+        <p>© 2026 Yaowapa Rachakum. All rights reserved.</p>
+        <a href="#home" class="footer-top">Back to top ↑</a>
     </div>
 </footer>
 
@@ -267,35 +267,38 @@
 (function () {
     const nav = document.getElementById('siteNav');
     const menu = document.getElementById('menu');
+    const links = menu.querySelectorAll('.navbar-nav a');
 
-    // Navbar: solid background once the page scrolls
+    // Navbar background on scroll
     const onScroll = () => nav.classList.toggle('is-scrolled', window.scrollY > 20);
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
 
-    // Mobile: toggle icon state + close menu after clicking a link
+    // Mobile menu: icon state + close after click
     menu.addEventListener('show.bs.collapse', () => nav.classList.add('is-open'));
     menu.addEventListener('hide.bs.collapse', () => nav.classList.remove('is-open'));
+    links.forEach(link => link.addEventListener('click', () => {
+        if (menu.classList.contains('show')) bootstrap.Collapse.getOrCreateInstance(menu).hide();
+    }));
 
-    menu.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-            if (menu.classList.contains('show')) {
-                bootstrap.Collapse.getOrCreateInstance(menu).hide();
-            }
+    // Highlight the active menu item
+    const sections = [...links].map(a => document.querySelector(a.getAttribute('href')));
+    const spy = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            if (!e.isIntersecting) return;
+            links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
         });
-    });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    sections.forEach(s => s && spy.observe(s));
 
-    // Reveal-on-scroll animation
+    // Reveal on scroll
     const items = document.querySelectorAll('.reveal');
     if ('IntersectionObserver' in window) {
         const io = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-visible');
-                    io.unobserve(entry.target);
-                }
+            entries.forEach(e => {
+                if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); }
             });
-        }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+        }, { threshold: 0.12 });
         items.forEach(el => io.observe(el));
     } else {
         items.forEach(el => el.classList.add('is-visible'));
